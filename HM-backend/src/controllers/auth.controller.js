@@ -1,8 +1,8 @@
 const userModel = require("../models/user.model")
+const jwt = require("jsonwebtoken")
 
 const registerController =async (req,res) => {
 	try {
-		
 	const {name , email, phone , password} = req.body
 
 	if(!name || !email|| !phone || !password) return res.status(422).json({
@@ -19,10 +19,17 @@ const registerController =async (req,res) => {
 		name,email,phone,password
 	})
 
+	let token  = jwt.sign({id:newUser._id } , process.env.JWT_SECRET , {expiresIn:"1h"})
+
+
+	res.cookie("token",token);
+
 	return res.status(201).json({
 		message:"User registered successfully",
 		user:newUser
 	})
+
+
 	} catch (error) {
 	console.log("error in registration -> ",error)	
 	return res.status(500).json({
@@ -34,17 +41,28 @@ const registerController =async (req,res) => {
 const loginController = async (req , res ) => {
 	try {
 		let {email , password} = req.body
-        if(!email || !password) return res.status(400).json({
+        if(!email || !password) 
+			return res.status(422).json({
 			message:"All fields are required"
 		})
-		const user = userModel.findOne({email})
+		const user =await userModel.findOne({email})
 
-	    const cp = user.comparePass(password)
+		if(!user)
+			return res.status(404).json({
+				message:"user not found"
+			})
+	    let cp =await user.comparePass(password)
 
 		if(!cp) return res.status(400).json({
 			message:"Invalid credentials"
 		})
 
+		let token =jwt.verify({  id : user._id } , process.env.JWT_SECRET , {
+			expiresIn:'1h'
+		})
+
+		res.cookie('token', token);
+		
 		return res.status(200).json({
 			message:"User logged in",
 			user:user
@@ -56,5 +74,10 @@ const loginController = async (req , res ) => {
 	})
 	}
 }
+
+
+
+
+
 
 module.exports= { registerController , loginController}

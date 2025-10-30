@@ -21,24 +21,28 @@ const productSchema = new mongoose.Schema({
 	size:{
 		type : String ,
 		enum : ["s" ,"m" , "xl" , "l" ,"xxl"],
-		default:"m"
+		default:["m"]
 	},
-	color:{
-		type:"String"  
+	color:[
+		{
+            type:"String"  
+		}
+
+	]
 		
-	},
+	,
 	image:{
 		type:Array,
-		required:true
+		default:[]
 
 	},
 	description: {
 		type:String,
 		required:true
 	},
-	user_id:{
+	seller_id:{
 		type:mongoose.Schema.Types.ObjectId,
-		ref:'user'
+		ref:'seller'
 	}
 },{timestamps:true})
 
