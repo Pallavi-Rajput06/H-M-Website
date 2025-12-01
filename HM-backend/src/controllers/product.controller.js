@@ -1,5 +1,4 @@
 const productModel = require('../models/product.model');
-const ProductModel = require('../models/product.model')
 const sendFiles = require('../services/storage.services')
 
 const createProductController = async (req, res) => {
@@ -15,9 +14,9 @@ const createProductController = async (req, res) => {
 				async (val) => await sendFiles(val.buffer , val.originalname)
 			)
 		)	
-		let {productName, amount, description, currency, size, color} = req.body 
+		let {productName, amount, description, currency, size, color, category } = req.body 
 
-		if(!productName||  !amount || !description|| !currency|| !size|| !color)
+		if(!productName||  !amount || !description|| !currency|| !size|| !color|| !category )
 			return res.status(422).json({
 				message:'All feilds are required'
 			})
@@ -32,10 +31,12 @@ const createProductController = async (req, res) => {
 				colors: color,
 				sizes: size,
 				images: uploadedImgs.map((val) => val.url),
+				category: category,
 			  });
 		  
 			  return res.status(201).json({
 				message: "Product created",
+				product: newProduct
 			  });
 				
 	} catch (error) {
@@ -47,7 +48,10 @@ const createProductController = async (req, res) => {
 
 const getAllProductController = async (req,res) => {
 	try {
-		let products = await productModel.find({})
+
+        let category  = req.params.cateory ;
+
+		let products = await productModel.find({category})
 
 		if(!products)
 			return res.status(404).json({
@@ -56,6 +60,7 @@ const getAllProductController = async (req,res) => {
 
 	return res.status(200).json({
 		message:'Products fetched'
+		,products:products
 	})
 	} catch (error) {
 	 console.log('error in get products api -> ' , error)	

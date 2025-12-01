@@ -34,6 +34,7 @@ const registerController =async (req,res) => {
 	console.log("error in registration -> ",error)	
 	return res.status(500).json({
 		message:"Internal Server Error"
+		,error: error
 	})
 	}
 }
