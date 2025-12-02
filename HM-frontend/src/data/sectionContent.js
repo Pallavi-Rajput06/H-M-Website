@@ -62,7 +62,7 @@ export const sectionContent = {
         "Iconic tailoring updated with playful proportions, glossy finishes and unexpected pops of colour.",
       ctaLabel: "Discover the drop",
       image:
-        "https://i.pinimg.com/1200x/6e/8f/a0/6e8fa0b1c2d3e4f5a6b7c8d9e0f1a2b3.jpg",
+        "https://i.pinimg.com/1200x/f3/18/15/f31815bd027decc95bfce8434fd7d303.jpg",
     },
     highlights: {
       eyebrow: "TRENDING NOW",
@@ -72,27 +72,27 @@ export const sectionContent = {
           name: "Tweed crop blazer",
           price: "₹3,999",
           image:
-            "https://i.pinimg.com/736x/7f/9a/b1/7f9ab1c2d3e4f5a6b7c8d9e0f1a2b3c4.jpg",
+            "https://i.pinimg.com/736x/7b/40/71/7b4071acb9f6486c6448ec0157c96777.jpg",
           badge: "Online exclusive",
         },
         {
           name: "Pleated midi skirt",
           price: "₹2,299",
           image:
-            "https://i.pinimg.com/736x/8a/b2/c3/8ab2c3d4e5f6a7b8c9d0e1f2a3b4c5d6.jpg",
+            "https://i.pinimg.com/736x/7f/b9/51/7fb951cdf72fbcc0527fefeb9e6071f6.jpg",
         },
         {
           name: "Oversized wool coat",
           price: "₹6,499",
           image:
-            "https://i.pinimg.com/736x/9b/c3/d4/9bc3d4e5f6a7b8c9d0e1f2a3b4c5d6e7.jpg",
+            "https://i.pinimg.com/1200x/56/11/ac/5611acb91e686e00d35aef8b5e7f930b.jpg",
           badge: "Bestseller",
         },
         {
           name: "Pointed leather boots",
           price: "₹4,499",
           image:
-            "https://i.pinimg.com/736x/ac/d4/e5/acd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8.jpg",
+            "https://i.pinimg.com/736x/fc/9f/a2/fc9fa20db79a22f37c1d3c8a9b3b37a7.jpg",
         },
       ],
     },
@@ -114,14 +114,14 @@ export const sectionContent = {
         subtitle: "Blazers, shirts and trousers from ₹2,499",
         ctaLabel: "Build the look",
         image:
-          "https://i.pinimg.com/736x/b1/c2/d3/b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6.jpg",
+          "https://i.pinimg.com/736x/e7/6a/f5/e76af5a2ef53fa12e6ad69630fe92a0b.jpg",
       },
       {
         title: "Everyday active",
         subtitle: "Technical fabrics for the city commute",
         ctaLabel: "Explore move",
         image:
-          "https://i.pinimg.com/736x/c2/d3/e4/c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7.jpg",
+          "https://i.pinimg.com/1200x/c8/3b/cd/c83bcdbc8a9c99dac23294158448aacb.jpg",
       },
     ],
     categorySection: {
@@ -132,22 +132,22 @@ export const sectionContent = {
         {
           label: "New in",
           image:
-            "https://i.pinimg.com/736x/d3/e4/f5/d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8.jpg",
+            "https://www.numbersea.com/cdn/shop/files/Bert-Fashionable-Gray-Notched-Lapel-Three-Piece-Prom-Outfit.jpg?v=1741997928",
         },
         {
           label: "Shirts",
           image:
-            "https://i.pinimg.com/736x/e4/f5/a6/e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9.jpg",
+            "https://i.pinimg.com/736x/62/f0/10/62f010dc8252da0dc949fb30179b5089.jpg",
         },
         {
           label: "Denim",
           image:
-            "https://i.pinimg.com/736x/f5/a6/b7/f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0.jpg",
+            "https://i.pinimg.com/1200x/fc/64/bc/fc64bc018c88ade55a726497450a10ab.jpg",
         },
         {
           label: "Shoes",
           image:
-            "https://i.pinimg.com/736x/a6/b7/c8/a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1.jpg",
+            "https://i.pinimg.com/736x/53/6a/80/536a809c4ca856ccbf56f5a0d0a67d86.jpg",
         },
       ],
     },
@@ -159,7 +159,7 @@ export const sectionContent = {
         "Windproof shells, refined cargos and heritage sneakers that move with your schedule.",
       ctaLabel: "Get moving",
       image:
-        "https://i.pinimg.com/1200x/b7/c8/d9/b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2.jpg",
+        "https://i.pinimg.com/1200x/70/5a/00/705a00fc451c3ea3fb32e9d7c1dce6f0.jpg",
     },
     highlights: {
       eyebrow: "TRENDING",
@@ -169,26 +169,26 @@ export const sectionContent = {
           name: "Double-breasted coat",
           price: "₹7,499",
           image:
-            "https://i.pinimg.com/736x/c8/d9/e0/c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3.jpg",
+            "https://i.pinimg.com/1200x/f6/0b/a8/f60ba873a0d8826e09397affe1a2fa84.jpg",
         },
         {
           name: "Relaxed cargo trousers",
           price: "₹2,999",
           image:
-            "https://i.pinimg.com/736x/d9/e0/f1/d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4.jpg",
+            "https://i.pinimg.com/736x/d7/e5/98/d7e5986df0d7200f00ce9e8e42aa4c6b.jpg",
           badge: "Back in stock",
         },
         {
           name: "Chunky knit sweater",
           price: "₹2,299",
           image:
-            "https://i.pinimg.com/736x/e0/f1/a2/e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5.jpg",
+            "https://i.pinimg.com/1200x/39/31/86/393186171aa1b4c6126ec62afcf7ba9d.jpg",
         },
         {
           name: "Minimal leather sneakers",
           price: "₹3,499",
           image:
-            "https://i.pinimg.com/736x/f1/a2/b3/f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6.jpg",
+            "https://i.pinimg.com/736x/0f/63/a5/0f63a54f34811e1df88f09b7914a8602.jpg",
         },
       ],
     },
@@ -210,14 +210,14 @@ export const sectionContent = {
         subtitle: "Padded jackets & parkas from ₹1,999",
         ctaLabel: "Bundle up",
         image:
-          "https://i.pinimg.com/736x/a2/b3/c4/a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7.jpg",
+          "https://i.pinimg.com/1200x/60/a4/de/60a4def9140154acabd8c9e3f908cb81.jpg",
       },
       {
         title: "Back-to-school",
         subtitle: "Uniform-ready polos, chinos and accessories",
         ctaLabel: "Shop the checklist",
         image:
-          "https://i.pinimg.com/736x/b3/c4/d5/b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8.jpg",
+          "https://i.pinimg.com/1200x/a5/fb/10/a5fb102532df27c010d7cdf2ce1fb941.jpg",
       },
     ],
     categorySection: {
@@ -228,22 +228,22 @@ export const sectionContent = {
         {
           label: "Baby (0-2Y)",
           image:
-            "https://i.pinimg.com/736x/c4/d5/e6/c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9.jpg",
+            "https://i.pinimg.com/1200x/6b/f6/2f/6bf62f5f615e055a2f7ae277f6639e35.jpg",
         },
         {
           label: "Kids (2-8Y)",
           image:
-            "https://i.pinimg.com/736x/d5/e6/f7/d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0.jpg",
+            "https://i.pinimg.com/736x/5f/9c/fa/5f9cfa3ce93e5a34c3a25fce89923a58.jpg",
         },
         {
           label: "Teen (8-14Y)",
           image:
-            "https://i.pinimg.com/736x/e6/f7/a8/e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1.jpg",
+            "https://i.pinimg.com/736x/70/56/5f/70565fadea237b7ebf2aecc581e87e6d.jpg",
         },
         {
           label: "Accessories",
           image:
-            "https://i.pinimg.com/736x/f7/a8/b9/f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2.jpg",
+            "https://i.pinimg.com/1200x/0d/25/5f/0d255f6a17d05930878923cd17a0cabd.jpg",
         },
       ],
     },
@@ -255,7 +255,7 @@ export const sectionContent = {
         "Easy-care finishes, reinforced knees and reversible silhouettes tested by real kids.",
       ctaLabel: "See the lab",
       image:
-        "https://i.pinimg.com/1200x/a8/b9/c0/a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3.jpg",
+        "https://i.pinimg.com/736x/4f/d1/54/4fd154412da9a571083a32afc27dd903.jpg",
     },
     highlights: {
       eyebrow: "POPULAR",
@@ -265,26 +265,26 @@ export const sectionContent = {
           name: "Corduroy shacket",
           price: "₹1,799",
           image:
-            "https://i.pinimg.com/736x/b9/c0/d1/b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4.jpg",
+            "https://i.pinimg.com/736x/e6/f2/9d/e6f29d1fbf358fb7f60af6f9977bc078.jpg",
         },
         {
           name: "Rainbow knit set",
           price: "₹1,299",
           image:
-            "https://i.pinimg.com/736x/c0/d1/e2/c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5.jpg",
+            "https://i.pinimg.com/1200x/36/3a/8a/363a8af5f89f9798b95cd56e4b5109b7.jpg",
           badge: "New",
         },
         {
           name: "Relaxed denim",
           price: "₹1,499",
           image:
-            "https://i.pinimg.com/736x/d1/e2/f3/d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6.jpg",
+            "https://i.pinimg.com/1200x/8f/40/1a/8f401a613da6cf4f4baca8ea5f3893a9.jpg",
         },
         {
           name: "Utility backpack",
           price: "₹999",
           image:
-            "https://i.pinimg.com/736x/e2/f3/a4/e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7.jpg",
+            "https://i.pinimg.com/1200x/44/94/4e/44944e839a8703ef45bd9429c4c7bb2f.jpg",
         },
       ],
     },
@@ -306,14 +306,14 @@ export const sectionContent = {
         subtitle: "Bouclé sofas, statement rugs and tonal cushions",
         ctaLabel: "Recreate the look",
         image:
-          "https://i.pinimg.com/736x/f3/a4/b5/f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8.jpg",
+          "https://i.pinimg.com/736x/eb/43/a4/eb43a40546f5bac8b7621746cf47af6d.jpg",
       },
       {
         title: "Serene bedroom",
         subtitle: "Organic bedding & sculptural lighting",
         ctaLabel: "Refresh your space",
         image:
-          "https://i.pinimg.com/736x/a4/b5/c6/a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9.jpg",
+          "https://i.pinimg.com/1200x/71/c4/bc/71c4bcbf7c93d1c99d305df45216cf2b.jpg",
       },
     ],
     categorySection: {
@@ -324,22 +324,22 @@ export const sectionContent = {
         {
           label: "Living room",
           image:
-            "https://i.pinimg.com/736x/b5/c6/d7/b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0.jpg",
+            "https://i.pinimg.com/736x/77/34/34/7734342cc069e0d8b96c18539a7b5b2a.jpg",
         },
         {
           label: "Bedroom",
           image:
-            "https://i.pinimg.com/736x/c6/d7/e8/c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1.jpg",
+            "https://i.pinimg.com/736x/6d/8d/03/6d8d03f6583fc13d57ea31fef0363381.jpg",
         },
         {
           label: "Kitchen & dining",
           image:
-            "https://i.pinimg.com/736x/d7/e8/f9/d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2.jpg",
+            "https://i.pinimg.com/1200x/46/24/31/462431459387d05885d5f7ff1e76a9e6.jpg",
         },
         {
           label: "Outdoor",
           image:
-            "https://i.pinimg.com/736x/e8/f9/a0/e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3.jpg",
+            "https://i.pinimg.com/736x/35/6a/f7/356af7a8458e894f9e727ada33d9340a.jpg",
         },
       ],
     },
@@ -351,7 +351,7 @@ export const sectionContent = {
         "Hand-thrown ceramics, textured linens and tactile glassware that ground your space.",
       ctaLabel: "Read the story",
       image:
-        "https://i.pinimg.com/1200x/f9/a0/b1/f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4.jpg",
+        "https://i.pinimg.com/1200x/96/a5/74/96a5743fd2faf2fa39da952247ca3b9a.jpg",
     },
     highlights: {
       eyebrow: "JUST ARRIVED",
@@ -361,26 +361,26 @@ export const sectionContent = {
           name: "Bouclé lounge chair",
           price: "₹12,999",
           image:
-            "https://i.pinimg.com/736x/a0/b1/c2/a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5.jpg",
+            "https://i.pinimg.com/736x/c8/ca/72/c8ca7215b75bcd6a7fff09467ec75fef.jpg",
         },
         {
           name: "Marble pedestal lamp",
           price: "₹5,499",
           image:
-            "https://i.pinimg.com/736x/b1/c2/d3/b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6.jpg",
+            "https://i.pinimg.com/1200x/96/e0/14/96e014dbfab88c629c23b50492a393f7.jpg",
           badge: "Limited",
         },
         {
           name: "Handwoven rug",
           price: "₹7,299",
           image:
-            "https://i.pinimg.com/736x/c2/d3/e4/c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7.jpg",
+            "https://i.pinimg.com/736x/9a/47/fe/9a47feb5a5380997fd3184f0f82f1b54.jpg",
         },
         {
           name: "Stoneware vase trio",
           price: "₹2,499",
           image:
-            "https://i.pinimg.com/736x/d3/e4/f5/d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8.jpg",
+            "https://i.pinimg.com/736x/5f/bf/00/5fbf00a5290a3c8552667c75c7891a39.jpg",
         },
       ],
     },
@@ -402,14 +402,14 @@ export const sectionContent = {
         subtitle: "Skin tints, balmy blush and radiance drops",
         ctaLabel: "Find your shade",
         image:
-          "https://i.pinimg.com/736x/e4/f5/a6/e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9.jpg",
+          "https://i.pinimg.com/736x/9d/50/b7/9d50b7289cddf40ac3f377d57a1aa139.jpg",
       },
       {
         title: "Fragrance wardrobe",
         subtitle: "Layerable scents inspired by slow mornings",
         ctaLabel: "Explore scents",
         image:
-          "https://i.pinimg.com/736x/f5/a6/b7/f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0.jpg",
+          "https://i.pinimg.com/1200x/26/35/2a/26352a359be9d82f2c438bb54f34300f.jpg",
       },
     ],
     categorySection: {
@@ -420,22 +420,22 @@ export const sectionContent = {
         {
           label: "Skincare",
           image:
-            "https://i.pinimg.com/736x/a6/b7/c8/a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1.jpg",
+            "https://i.pinimg.com/736x/6b/1b/7f/6b1b7f565cc1a470f51f76842afd5aac.jpg",
         },
         {
           label: "Makeup",
           image:
-            "https://i.pinimg.com/736x/b7/c8/d9/b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2.jpg",
+            "https://i.pinimg.com/1200x/82/a6/06/82a6066323464b71e6753ecb74840e76.jpg",
         },
         {
           label: "Haircare",
           image:
-            "https://i.pinimg.com/736x/c8/d9/e0/c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3.jpg",
+            "https://i.pinimg.com/1200x/0f/97/ac/0f97ac39cd38e6429d697b9dbab0b506.jpg",
         },
         {
           label: "Accessories",
           image:
-            "https://i.pinimg.com/736x/d9/e0/f1/d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4.jpg",
+            "https://i.pinimg.com/1200x/c1/c8/e5/c1c8e58176f5fa160f9990764d4ea8fa.jpg",
         },
       ],
     },
@@ -447,7 +447,7 @@ export const sectionContent = {
         "Soft-focus metallics and gel-to-powder textures tested backstage and in the beauty lab.",
       ctaLabel: "Get the look",
       image:
-        "https://i.pinimg.com/1200x/e0/f1/a2/e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5.jpg",
+        "https://i.pinimg.com/1200x/e3/b3/46/e3b34625e40b6bca30a4526b706de088.jpg",
     },
     highlights: {
       eyebrow: "NOW TRENDING",
@@ -457,26 +457,26 @@ export const sectionContent = {
           name: "Radiant skin tint",
           price: "₹1,299",
           image:
-            "https://i.pinimg.com/736x/f1/a2/b3/f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6.jpg",
+            "https://i.pinimg.com/736x/db/6f/c1/db6fc17b98f214c0471442dddad1fe29.jpg",
           badge: "Vegan",
         },
         {
           name: "Mono eyeshadow duo",
           price: "₹799",
           image:
-            "https://i.pinimg.com/736x/a2/b3/c4/a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7.jpg",
+            "https://i.pinimg.com/736x/24/06/b5/2406b5a6a6be204b78a3eac538505ba1.jpg",
         },
         {
           name: "Gloss balm stick",
           price: "₹699",
           image:
-            "https://i.pinimg.com/736x/b3/c4/d5/b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8.jpg",
+            "https://i.pinimg.com/1200x/71/7b/48/717b48e63fb8c1e850b46f233998bb6b.jpg",
         },
         {
-          name: "Santal pause eau de parfum",
+          name: "Santal pause eau de perfume",
           price: "₹1,999",
           image:
-            "https://i.pinimg.com/736x/c4/d5/e6/c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9.jpg",
+            "https://i.pinimg.com/1200x/a2/12/94/a21294e14269870c8a4f313758594acc.jpg",
         },
       ],
     },
