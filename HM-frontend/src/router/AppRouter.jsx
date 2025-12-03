@@ -6,6 +6,10 @@ import MenPage from "../pages/MenPage";
 import KidsPage from "../pages/KidsPage";
 import HomePage from "../pages/HomePage";
 import BeautyPage from "../pages/BeautyPage";
+import AuthPage from "../pages/AuthPage";
+import WishlistPage from "../pages/WishlistPage";
+import CartPage from "../pages/CartPage";
+import ProductDetailPage from "../pages/ProductDetailPage";
 
 const AppRouter = () => {
   const router = createBrowserRouter([
@@ -32,6 +36,22 @@ const AppRouter = () => {
         {
           path: "beauty",
           element: <BeautyPage />,
+        },
+        {
+          path: "auth",
+          element: <AuthPage />,
+        },
+        {
+          path: "wishlist",
+          element: <WishlistPage />,
+        },
+        {
+          path: "cart",
+          element: <CartPage />,
+        },
+        {
+          path: "product",
+          element: <ProductDetailPage />,
         },
       ],
     },

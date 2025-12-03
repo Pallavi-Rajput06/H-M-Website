@@ -1,4 +1,5 @@
 import React from "react";
+import { useOutletContext } from "react-router-dom";
 import SectionHero from "../components/SectionHero";
 import PromoGrid from "../components/PromoGrid";
 import CategoryGrid from "../components/CategoryGrid";
@@ -7,6 +8,13 @@ import ProductHighlights from "../components/ProductHighlights";
 import { sectionContent } from "../data/sectionContent";
 
 const BeautyPage = () => {
+  const {
+    searchQuery = "",
+    favourites = [],
+    onToggleFavourite,
+    onAddToCart,
+  } = useOutletContext() || {};
+
   const content = sectionContent.beauty;
 
   return (
@@ -15,7 +23,13 @@ const BeautyPage = () => {
       <PromoGrid promos={content.promos} />
       <CategoryGrid {...content.categorySection} />
       <EditorialSpotlight {...content.editorial} />
-      <ProductHighlights {...content.highlights} />
+      <ProductHighlights
+        {...content.highlights}
+        searchQuery={searchQuery}
+        favourites={favourites}
+        onToggleFavourite={onToggleFavourite}
+        onAddToCart={onAddToCart}
+      />
     </div>
   );
 };

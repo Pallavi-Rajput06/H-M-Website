@@ -1,15 +1,49 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import React, { useMemo, useState } from "react";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { Heart, Search, ShoppingBag, User } from "lucide-react";
+import SiteFooter from "../components/SiteFooter";
 
 const HomeLayout = () => {
-const mainNav = [
-  { label: "Ladies", path: "/" },
-  { label: "Men", path: "/men" },
-  { label: "Kids", path: "/kid" },
-  { label: "Home", path: "/home" },
-  { label: "Beauty", path: "/beauty" },
-];
+  const navigate = useNavigate();
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [favourites, setFavourites] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
+
+  const mainNav = [
+    { label: "Ladies", path: "/" },
+    { label: "Men", path: "/men" },
+    { label: "Kids", path: "/kid" },
+    { label: "Home", path: "/home" },
+    { label: "Beauty", path: "/beauty" },
+  ];
+
+  const handleToggleFavourite = (item) => {
+    setFavourites((prev) => {
+      const exists = prev.some((p) => p.name === item.name);
+      if (exists) {
+        return prev.filter((p) => p.name !== item.name);
+      }
+      return [...prev, item];
+    });
+  };
+
+  const handleAddToCart = (item) => {
+    setCartItems((prev) => {
+      const exists = prev.find((p) => p.name === item.name);
+      if (exists) {
+        return prev.map((p) =>
+          p.name === item.name ? { ...p, quantity: (p.quantity || 1) + 1 } : p
+        );
+      }
+      return [...prev, { ...item, quantity: 1 }];
+    });
+  };
+
+  const totalCartCount = useMemo(
+    () => cartItems.reduce((sum, item) => sum + (item.quantity || 1), 0),
+    [cartItems]
+  );
 
   return (
     <div className="min-h-screen bg-white text-neutral-900">
@@ -60,6 +94,8 @@ const mainNav = [
                 className="w-full bg-transparent outline-none placeholder:tracking-widest placeholder:text-neutral-400"
                 type="search"
                 placeholder="SEARCH PRODUCTS"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
 
@@ -67,30 +103,53 @@ const mainNav = [
               type="button"
               className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-600 hover:text-neutral-900"
               aria-label="Account"
+              onClick={() => navigate("/auth")}
             >
               <User className="h-4 w-4" />
             </button>
             <button
               type="button"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-600 hover:text-neutral-900"
+              className="relative flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-600 hover:text-neutral-900"
               aria-label="Wishlist"
+              onClick={() => navigate("/wishlist")}
             >
               <Heart className="h-4 w-4" />
+              {favourites.length > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-red-500 px-1 text-[10px] font-semibold text-white">
+                  {favourites.length}
+                </span>
+              )}
             </button>
             <button
               type="button"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-600 hover:text-neutral-900"
+              className="relative flex h-10 w-10 items-center justify-center rounded-full border border-neutral-200 text-neutral-600 hover:text-neutral-900"
               aria-label="Bag"
+              onClick={() => navigate("/cart")}
             >
               <ShoppingBag className="h-4 w-4" />
+              {totalCartCount > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-neutral-900 px-1 text-[10px] font-semibold text-white">
+                  {totalCartCount}
+                </span>
+              )}
             </button>
           </div>
         </div>
       </header>
 
       <main className="w-full pb-24 pt-10">
-        <Outlet />
+        <Outlet
+          context={{
+            searchQuery,
+            favourites,
+            cartItems,
+            onToggleFavourite: handleToggleFavourite,
+            onAddToCart: handleAddToCart,
+          }}
+        />
       </main>
+
+      <SiteFooter />
     </div>
   );
 };
