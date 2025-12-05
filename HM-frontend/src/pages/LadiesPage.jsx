@@ -5,6 +5,7 @@ import PromoGrid from "../components/PromoGrid";
 import CategoryGrid from "../components/CategoryGrid";
 import EditorialSpotlight from "../components/EditorialSpotlight";
 import ProductHighlights from "../components/ProductHighlights";
+import GlobalSearchResults from "../components/GlobalSearchResults";
 import { sectionContent } from "../data/sectionContent";
 
 const LadiesPage = () => {
@@ -16,20 +17,32 @@ const LadiesPage = () => {
   } = useOutletContext() || {};
 
   const content = sectionContent.ladies;
+  const hasSearchQuery = searchQuery.trim().length > 0;
 
   return (
-    <div className="space-y-16 px-4">
-      <SectionHero {...content.hero} />
-      <PromoGrid promos={content.promos} />
-      <CategoryGrid {...content.categorySection} />
-      <EditorialSpotlight {...content.editorial} />
-      <ProductHighlights
-        {...content.highlights}
-        searchQuery={searchQuery}
-        favourites={favourites}
-        onToggleFavourite={onToggleFavourite}
-        onAddToCart={onAddToCart}
-      />
+    <div className="space-y-16">
+      {hasSearchQuery ? (
+        <GlobalSearchResults
+          searchQuery={searchQuery}
+          favourites={favourites}
+          onToggleFavourite={onToggleFavourite}
+          onAddToCart={onAddToCart}
+        />
+      ) : (
+        <div className="space-y-16 px-4">
+          <SectionHero {...content.hero} />
+          <PromoGrid promos={content.promos} />
+          <CategoryGrid {...content.categorySection} />
+          <EditorialSpotlight {...content.editorial} />
+          <ProductHighlights
+            {...content.highlights}
+            searchQuery={searchQuery}
+            favourites={favourites}
+            onToggleFavourite={onToggleFavourite}
+            onAddToCart={onAddToCart}
+          />
+        </div>
+      )}
     </div>
   );
 };
