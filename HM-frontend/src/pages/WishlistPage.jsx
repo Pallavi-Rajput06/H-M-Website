@@ -1,8 +1,9 @@
 import React from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 
 const WishlistPage = () => {
   const { favourites = [] } = useOutletContext() || {};
+  const navigate = useNavigate();
 
   return (
     <div className="space-y-6 px-4">
@@ -24,14 +25,22 @@ const WishlistPage = () => {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {favourites.map((item) => (
             <article key={item.name} className="space-y-3">
-              <div className="overflow-hidden rounded-[30px] bg-neutral-100">
+              <button
+                type="button"
+                className="group block w-full overflow-hidden rounded-[30px] bg-neutral-100"
+                onClick={() =>
+                  navigate("/product", {
+                    state: { item },
+                  })
+                }
+              >
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="h-72 w-full object-cover"
+                  className="h-72 w-full object-cover transition duration-500 group-hover:scale-105"
                   loading="lazy"
                 />
-              </div>
+              </button>
               <div className="flex items-center justify-between text-sm">
                 <div>
                   <p className="font-semibold text-neutral-900">{item.name}</p>

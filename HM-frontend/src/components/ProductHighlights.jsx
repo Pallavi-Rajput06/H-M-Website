@@ -97,7 +97,10 @@ const ProductHighlights = ({
                   aria-label={
                     isFavourite ? "Remove from favourites" : "Add to favourites"
                   }
-                  onClick={() => onToggleFavourite && onToggleFavourite(item)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onToggleFavourite && onToggleFavourite(item);
+                  }}
                 >
                   <Heart className="h-4 w-4" />
                 </button>

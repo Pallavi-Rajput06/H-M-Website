@@ -1,8 +1,9 @@
 import React from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, useNavigate } from "react-router-dom";
 
 const CartPage = () => {
   const { cartItems = [] } = useOutletContext() || {};
+  const navigate = useNavigate();
 
   const subtotal = cartItems.reduce(
     (sum, item) => sum + (item.quantity || 1),
@@ -30,14 +31,22 @@ const CartPage = () => {
                 key={item.name}
                 className="flex gap-4 rounded-3xl border border-neutral-200 p-4"
               >
-                <div className="h-24 w-24 overflow-hidden rounded-2xl bg-neutral-100">
+                <button
+                  type="button"
+                  className="group h-24 w-24 overflow-hidden rounded-2xl bg-neutral-100"
+                  onClick={() =>
+                    navigate("/product", {
+                      state: { item },
+                    })
+                  }
+                >
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     loading="lazy"
                   />
-                </div>
+                </button>
                 <div className="flex flex-1 items-center justify-between text-sm">
                   <div>
                     <p className="font-semibold text-neutral-900">

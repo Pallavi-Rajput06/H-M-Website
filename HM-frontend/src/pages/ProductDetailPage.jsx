@@ -1,11 +1,13 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useOutletContext } from "react-router-dom";
 import { Heart, ShoppingBag } from "lucide-react";
 
 const ProductDetailPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const item = location.state?.item;
+  const { onAddToCart, favourites = [], onToggleFavourite } =
+    useOutletContext() || {};
 
   if (!item) {
     return (
@@ -65,7 +67,15 @@ const ProductDetailPage = () => {
           </div>
         </div>
 
-        <button className="mt-2 flex items-center justify-center gap-2 rounded-full bg-neutral-900 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white hover:bg-black">
+        <button
+          type="button"
+          className="mt-2 flex items-center justify-center gap-2 rounded-full bg-neutral-900 px-8 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white hover:bg-black"
+          onClick={() => {
+            if (onAddToCart) {
+              onAddToCart(item);
+            }
+          }}
+        >
           <ShoppingBag className="h-4 w-4" />
           Add
         </button>
